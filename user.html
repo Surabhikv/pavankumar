@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Quiz</title>
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Online Quiz</h1>
+    <input type="text" id="username" placeholder="Enter your name" required />
+    <div id="quiz">
+      <p id="question"></p>
+      <div id="choices"></div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="result" style="display: none;">
+      <h2>Your Score:</h2>
+      <p id="score"></p>
+      <button onclick="saveUserScore()">Submit</button>
+    </div>
+  </div>
+  <script src="s.js"></script>
+  <script>
+    loadQuestion(); // Initialize the quiz
+  </script>
+</body>
+</html>
